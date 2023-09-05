@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="mySuit">
+
+    <!--   https://www.e-junkie.com/wiki/demo/paypal
+
+    Şuanda TechnoStudynin sitesi Before Classta çalışıyor. Eğer E-Junkiede çalışacaksanız >>>>  siteiIsmi value değerine
+    E-Junkie Çalışması için kullanılacak. Lütfen sadece kendi classınızı Pull Request Yapın.
+    Bu alanı istediğiniz gibi kendi Localinizde düzenleyebilirsiniz fakat push/pull request yapmamanız gerekir.  -->
+
+
+    <test name="myTest1">
+        <parameter name="siteIsmi" value="https://techno.study/tr"></parameter>
+        <parameter name="browserTipi" value="chrome"></parameter>
+
+        <classes>
+            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+        </classes>
+    </test>
+
+    <test name="myTest2">
+        <parameter name="siteIsmi" value="https://techno.study/tr"></parameter>
+        <parameter name="browserTipi" value="edge"></parameter>
+        <classes>
+            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+        </classes>
+    </test>
+
+
+    <test name="myTest3">
+        <parameter name="siteIsmi" value="https://techno.study/tr"></parameter>
+        <parameter name="browserTipi" value="firefox"></parameter>
+        <classes>
+            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
+
+
+
