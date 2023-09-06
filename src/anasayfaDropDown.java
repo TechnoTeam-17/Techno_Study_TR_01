@@ -1,4 +1,3 @@
-import Utility.BaseDriver;
 import Utility.BaseDriverBrowser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,10 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class anasayfaKurslarDropDownGoruntuleme extends BaseDriverBrowser {
+public class anasayfaDropDown extends BaseDriverBrowser {
     @Test
     public void anasayfaKurslarDropDownGoruntulemeTest() {
 
