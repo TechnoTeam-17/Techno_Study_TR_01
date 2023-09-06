@@ -12,6 +12,7 @@ import java.util.List;
 
 public class anasayfaKurslarDropDownGoruntuleme extends BaseDriverBrowser {
     @Test
+
     public void anasayfaKurslarDropDownGoruntulemeTest() {
 
 
