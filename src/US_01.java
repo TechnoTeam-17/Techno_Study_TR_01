@@ -1,3 +1,4 @@
+import Utility.BaseDriver;
 import Utility.BaseDriverBrowser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class US_01 extends BaseDriverBrowser {
+public class US_01 extends BaseDriver {
     @Test
     public void anasayfaKurslarDropDownGoruntulemeTest() {
 
@@ -20,6 +21,11 @@ public class US_01 extends BaseDriverBrowser {
         expectedMenuList.add("Veri bilimi");
         expectedMenuList.add("Job Center & Arbeitsamt");
         expectedMenuList.add("Master's Program");
+
+
+        WebElement courses = driver.findElement(By.xpath("//a[@data-tooltip-menu-id='516093139']")); //
+        new Actions(driver).moveToElement(courses).build().perform();
+        Assert.assertTrue(courses.isDisplayed());
 
 
         List<WebElement> actualMenuListTextDegil = driver.findElements(By.cssSelector("div[class='t966__menu-item-title t-name']"));
