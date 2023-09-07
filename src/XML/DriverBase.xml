@@ -14,7 +14,8 @@
         <parameter name="browserTipi" value="chrome"></parameter>
 
         <classes>
-            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+            <class name="US_01"> </class>
+            <class name="US_02"> </class>
         </classes>
     </test>
 
@@ -22,7 +23,8 @@
         <parameter name="siteIsmi" value="https://techno.study/tr"></parameter>
         <parameter name="browserTipi" value="edge"></parameter>
         <classes>
-            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+            <class name="US_01"> </class>
+            <class name="US_02"> </class>
         </classes>
     </test>
 
@@ -31,7 +33,8 @@
         <parameter name="siteIsmi" value="https://techno.study/tr"></parameter>
         <parameter name="browserTipi" value="firefox"></parameter>
         <classes>
-            <class name="anasayfaKurslarDropDownGoruntuleme"> </class>
+            <class name="US_01"> </class>
+            <class name="US_02"> </class>
         </classes>
     </test>
 
