@@ -1,11 +1,10 @@
 import Utility.BaseDriver;
-import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class basvur extends BaseDriver {
+public class US_03_basvur extends BaseDriver {
     @Test
     public void testa1(){
         driver.get("https://techno.study/tr");

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US_02 extends BaseDriverBrowser {
+public class US_02_LogIn extends BaseDriver {
     @Test
-    public void US_02_Test(){
+    public void US_02(){
 
         WebElement campusLogin= driver.findElement(By.xpath("//*[text()='Campus Login']"));
         campusLogin.click();

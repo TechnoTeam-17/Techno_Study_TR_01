@@ -35,7 +35,6 @@ public class BaseDriver {
 
     public void sayfaAcma(){
         driver.get("https://techno.study/tr");
-
     }
 
     @AfterClass

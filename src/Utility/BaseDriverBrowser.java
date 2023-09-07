@@ -7,9 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -20,7 +18,8 @@ public class BaseDriverBrowser {
     public WebDriver driver;
     public static WebDriverWait wait;
 
-    @BeforeClass
+    //@BeforeClass
+    @BeforeMethod
     @Parameters({"browserTipi", "siteIsmi"})
     public void baslangicIslemleri(String browserTipi, String calisacakSiteIsmi){
         Logger logger= Logger.getLogger(""); // output yapılan logları al.
@@ -54,7 +53,8 @@ public class BaseDriverBrowser {
     }
 
 
-    @AfterClass
+    //@AfterClass
+    @AfterMethod
     public void bitisIslemleri(){ // tearDown
         MyFunc.Bekle(5);
         driver.quit();
