@@ -19,7 +19,6 @@ public class herKursIcinDetayBilgi extends BaseDriver{
     public void detayliBilgiTest(){
 
         driver.get("https://techno.study/tr");
-
         List<WebElement> detayliBilgi=driver.findElements(By.linkText("Detaylı bilgi"));
 
         for (int i = 0; i <detayliBilgi.size() ; i++) {
