@@ -1,7 +1,7 @@
 import Utility.BaseDriver;
 import Utility.MyFunc;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.Arrays;
@@ -29,7 +29,7 @@ public class EJ_02 extends BaseDriver {
 
         for (String error : errorMessages) {
             WebElement errorMessage = driver.findElement(By.xpath("//div[@id='SnackBar']/span"));
-            Assert.assertTrue(error + " mesajı görüntülenmiyor!", errorMessage.isDisplayed());
+            Assert.assertTrue( errorMessage.isDisplayed());
             System.out.println("errorMessage = " + error);
         }
 
