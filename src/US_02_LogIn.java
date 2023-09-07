@@ -1,3 +1,4 @@
+import Utility.BaseDriver;
 import Utility.BaseDriverBrowser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -5,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US_02_LogIn extends BaseDriverBrowser {
+public class US_02_LogIn extends BaseDriver {
     @Test
     public void US_02(){
 
