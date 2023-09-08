@@ -21,20 +21,20 @@ public class US_05_SosialMediaErisim extends BaseDriver {
 
         js.executeScript("window.scrollTo(0, 7000);");
 
-        WebElement facebook = driver.findElement(By.linkText("https://www.facebook.com/technostudybootcamps"));
+        WebElement facebook = driver.findElement(By.xpath("//a[@href='https://www.facebook.com/technostudybootcamps']"));
                 facebook.click();
         MyFunc.Bekle(3);
 
-        WebElement instagram = driver.findElement(By.linkText("https://www.instagram.com/techno.study"));
+        WebElement instagram = driver.findElement(By.xpath("//a[@href='https://www.instagram.com/techno.study/']"));
                 instagram.click();
         MyFunc.Bekle(1);
 
 
-        WebElement youtube = driver.findElement(By.linkText("https://www.youtube.com/c/TechnoStudyInc"));
+        WebElement youtube = driver.findElement(By.xpath("//a[@href='https://www.youtube.com/c/TechnoStudyInc']"));
                 youtube.click();
         MyFunc.Bekle(1);
 
-        WebElement linkedin = driver.findElement(By.linkText("https://www.linkedin.com/company/techno-study-inc"));
+        WebElement linkedin = driver.findElement(By.xpath("//a[@href='https://www.linkedin.com/company/techno-study-inc/']"));
                 linkedin.click();
         MyFunc.Bekle(1);
 
